@@ -295,7 +295,7 @@ boolean parseInfo() {
       ezo_type = F("EZO-PRS - Embedded Pressure Sensor");
     }
     else if (strcmp(_type, "PMP") == 0) {
-      ezo_type = F("EZO-PMP™ - Embedded Dosing Pump");
+      ezo_type = F("EZO-PMP - Embedded Dosing Pump");
     }
     else if (strcmp(_type, "RGB") == 0) {
       ezo_type = F("EZO-RGB - Embedded Color Sensor");
