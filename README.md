@@ -30,8 +30,9 @@ continuously polls the read-command from the active EZO device. Any key or comma
 
 ## Atlas Scientific EZO Compatibility
 * EZO pH Circuit
-* EZO ORP CircuitEZO Dissolved Oxygen Circuit
 * EZO Conductivity Circuit
+* EZO ORP Circuit
+* EZO Dissolved Oxygen Circuit
 * EZO RTD Circuit
 * EZO FLOW - Embedded Flow Meter Totalizer
 * EZO CO2 - Embedded NDIR CO2 Sensor
