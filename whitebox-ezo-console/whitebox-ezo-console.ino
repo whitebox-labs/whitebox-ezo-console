@@ -27,7 +27,7 @@ boolean computer_msg_complete = false;
 
 const int EZO_ANSWER_LENGTH = 32;
 char ezo_answer[EZO_ANSWER_LENGTH];     // A 32 byte character array to hold incoming data from the sensors
-int ezo_address = 0;                        // INT pointer for channel switching - 0-7 serial, 8-127 I2C addresses
+int ezo_address = 0;                    // INT pointer for channel switching - 0-7 serial, 8-127 I2C addresses
 String ezo_type;                        // hold the name / type of the EZO device
 char* ezo_version;                      // hold the version of the EZO device
 
@@ -177,7 +177,7 @@ void eval_command() {
     if (cmd[0] == 'r') { // it's a read command
       next_receive_time = millis() + 1000;
     } else {
-      next_receive_time = millis() + 400;
+      next_receive_time = millis() + 300;
     }
   }
 }
@@ -371,6 +371,7 @@ void intro() {
     Serial.println( F("\nType an I2C address to connect the console to an EZO deivce (1-127)"));
   }
   Serial.println( F("For info type '!help'"));
+  Serial.println( F("\n"));
 }
 
 
