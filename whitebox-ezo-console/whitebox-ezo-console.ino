@@ -174,7 +174,7 @@ void eval_command() {
 
     ezo_send_command(cmd);
 
-    if (cmd[0] == 'r') { // it's a read command
+    if (cmd[0] == 'r' || cmd[0] == 'R' || strncmp ( cmd, "Cal", 3 ) == 0 || strncmp ( cmd, "cal", 3 ) == 0) { // it's a "R" or "Cal" command
       next_receive_time = millis() + 1000;
     } else {
       next_receive_time = millis() + 300;
