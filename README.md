@@ -8,8 +8,8 @@ Using the console you identifiy and list available EZO devices and send commands
 
 
 ### Select the active EZO device
-Type the I2C address of the device, followed by <ENTER> - e.g. "99<ENTER>"
-Once connected, you can send any I2C command the EZO device accepts - e.g. "r<ENTER>" to read the current value.
+Type the I2C address of the device, followed by <ENTER> - e.g. `99<ENTER>`
+Once connected, you can send any I2C command the EZO device accepts - e.g. `r<ENTER>` to read the current value.
   
 ### Console Commands
 Console commands start with an '!' and are not sent to the EZO device but are used as tools in the console:
@@ -23,10 +23,11 @@ continuously polls the read-command from the active EZO device. Any key or comma
 
 
 ## Whitebox Shields Compatibility
-* Whitebox T2 Mini MkII `T2.21`: fully compatible
 * Whitebox T1 MkII `T1.21`: fully compatible
-* _(Legacy)_ Tentacle Shield `T1.16`: compatible if used in I2C-only mode
-* _(Legacy)_ Tentacle Mini `T1.16`: fully compatible
+* Whitebox T2 MkII `T2.21` SMA: fully compatible
+* Whitebox T2 MkII `T2.21` BNC: fully compatible
+* _(Legacy)_ Tentacle Shield `T1.16`: fully compatible if used in I2C-only mode
+* _(Legacy)_ Tentacle Mini `T2.16`: fully compatible
 
 ## Atlas Scientific EZO Compatibility
 * EZO pH Circuit
